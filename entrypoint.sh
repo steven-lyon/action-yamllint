@@ -28,6 +28,8 @@ if [[ "$INPUT_NO_WARNINGS" == "true" ]]; then
     options+=(--no-warnings)
 fi
 
+pip install --user yamllint
+
 # Enable globstar so ** globs recursively
 shopt -s globstar
 
