@@ -39,7 +39,7 @@ runs:
       run: |
         echo "Test"
         echo "${{ github.action_path }}/entrypoint.sh"
-        ${{ github.action_path }}/test.sh
+        bash ${{ github.action_path }}/test.sh
       shell: bash
       env:
         INPUT_FILE_OR_DIR: ${{ inputs.file_or_dir }}
