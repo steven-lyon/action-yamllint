@@ -34,12 +34,9 @@ runs:
   using: 'composite'
   steps:
     - id: yamllint
-        # # export LOGFILE=$(mktemp yamllint-XXXXXX)
-        # ${{ github.action_path }}/entrypoint.sh
       run: |
-        echo "Test"
-        echo "${{ github.action_path }}/entrypoint.sh"
-        bash ${{ github.action_path }}/test.sh
+        # export LOGFILE=$(mktemp yamllint-XXXXXX)
+        bash ${{ github.action_path }}/entrypoint.sh
       shell: bash
       env:
         INPUT_FILE_OR_DIR: ${{ inputs.file_or_dir }}
