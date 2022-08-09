@@ -1,5 +1,7 @@
 #!/bin/bash -l
 # shellcheck disable=SC2086
+echo "test"
+
 set -o pipefail
 
 echo "======================"
