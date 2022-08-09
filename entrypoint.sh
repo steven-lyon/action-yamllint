@@ -28,6 +28,7 @@ if [[ "$INPUT_NO_WARNINGS" == "true" ]]; then
     options+=(--no-warnings)
 fi
 
+sudo apt update
 sudo apt-get install yamllint
 
 # Enable globstar so ** globs recursively
