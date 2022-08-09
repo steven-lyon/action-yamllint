@@ -36,8 +36,8 @@ runs:
     - id: yamllint
       run: |
         # export LOGFILE=$(mktemp yamllint-XXXXXX)
-        chmod +x ${{ github.action_path }}/entrypoint.sh -v
-        ${{ github.action_path }}/entrypoint.sh
+        # chmod +x ${{ github.action_path }}/entrypoint.sh -v
+        sudo ${{ github.action_path }}/entrypoint.sh
       shell: bash
       env:
         INPUT_FILE_OR_DIR: ${{ inputs.file_or_dir }}
